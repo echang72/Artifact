@@ -1,0 +1,24 @@
+<!-- selectByGPA.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select by GPA Page</title>
+</head>
+<body>
+
+    <h1>Display GPAs Greater than or Equal to</h1>
+    <form action="/selectByGPA" method="post">
+      <label for="gpa"><b>GPA:</b></label>
+      <input type="number" id="gpa" name="gpa" step="0.01" required><br>
+      <br>
+      <button type="submit">Submit Request</button>
+    </form>
+    
+    <hr>
+    <a href="/">HOME</a>
+
+</body>
+</html>

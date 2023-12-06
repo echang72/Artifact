@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Page</title>
+</head>
+<body>
+
+    <h1>Application</h1>
+    <form id="applicationForm" action="/submit" method="post" onsubmit="confirmSubmit()">
+      <fieldset>
+
+        <div>
+          <label for="name" style="margin-right: 10px;"><b>Name:</b></label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email" style="margin-right: 10px;"><b>Email Address:</b></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <br>
+        <label for="gpa"><b>GPA:</b></label>
+        <input type="number" id="gpa" name="gpa" step="0.01" required><br>
+        <br>
+        <label for="background"><b>Background Information:</b></label>
+        <br>
+        <textarea id="background" name="background" rows="5" cols="90" required></textarea><br>
+        
+      </fieldset>
+      
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit Application</button>
+    </form>
+    
+    <hr>
+    <a href="/">HOME</a>
+    
+    <script>
+      function confirmSubmit() {
+        return confirm("Are you sure you want to submit your application?\nYou will not be able to change your information once submitted.");
+      }
+    </script>
+    
+
+</body>
+</html>
